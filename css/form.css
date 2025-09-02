@@ -1,0 +1,117 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fundo com gradiente */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  position: relative;
+}
+
+/* Título */
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #000000;
+}
+
+/* Labels */
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;                /* ocupa toda a largura do container */
+    padding: 10px 15px;         /* espaçamento interno */
+    margin: 10px 0;             /* espaço acima e abaixo */
+    border: 2px solid #6a11cb;  /* borda roxa */
+    border-radius: 8px;         /* cantos arredondados */
+    font-size: 16px;            /* tamanho da fonte */
+    outline: none;              /* remove contorno padrão */
+    transition: all 0.3s ease;  /* animação suave */
+}
+
+/* Efeito ao focar */
+input[type="text"]:focus , input[type="number"]:focus {
+    border-color: #2575fc;      /* muda cor da borda ao focar */
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.5); /* sombra azul suave */
+}
+
+/* Inputs */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Botão */
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+input[type="submit"]:hover {
+  background: linear-gradient(135deg, #764ba2, #667eea);
+  transform: scale(1.05);
+}
+
+.form-container {
+  position: relative; /* Agora serve de referência para o círculo */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  color: white;
+  text-align: center;
+}
+
+/* Círculo de Login */
+.login-circle {
+  position: absolute;
+  right: -80px; /* distância para o lado do form */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70px;
+  height: 70px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-circle:hover {
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
