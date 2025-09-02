@@ -56,6 +56,7 @@ O objetivo deste projeto é permitir que os utilizadores registem-se, façam log
 # Estrutura do Projeto
 .
 ├── db.php                # Configuração da base de dados
+
 ├── index.php             # Página principal / login
 ├── register.php          # Página de registo
 ├── home.php              # Página principal após login (lista de tarefas)
