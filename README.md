@@ -58,16 +58,27 @@ O objetivo deste projeto é permitir que os utilizadores registem-se, façam log
 ├── db.php                # Configuração da base de dados
 
 ├── index.php             # Página principal / login
+
 ├── register.php          # Página de registo
+
 ├── home.php              # Página principal após login (lista de tarefas)
+
 ├── addtask.php           # Script para criar tarefas
+
 ├── update.php            # Script para atualizar tarefas
+
 ├── delete.php            # Script para apagar tarefas
+
 ├── logout.php            # Script de logout
+
 ├── todolist.sql          # Script SQL para criar a base de dados/tabelas e campos já preenchidos
+
 └── css/
+
     ├── form.css          # Ficheiros de estilo para os formulários
+
     ├── home.css          # Ficheiros de estilo para o home
+    
     └── style.css         # Ficheiros de estilo para o index
 
 **Observação**
