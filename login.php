@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <form action="login.php" method="post">
     <h2>Login</h2>
   <label for="email">Email:</label><br>
-  <input type="email" name="email" placeholder="example@gmail.com"><br>
+  <input type="email" name="email" placeholder="example123@gmail.com"><br>
   <label for="password">Password:</label><br>
   <input type="password" name="password" placeholder="123456"><br><br>
   <input type="submit" value="Submit">
